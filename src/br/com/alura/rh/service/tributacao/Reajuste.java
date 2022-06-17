@@ -6,8 +6,4 @@ import java.time.LocalDate;
 interface Reajuste {
     BigDecimal valor();
     LocalDate data();
-
-    // Nova atualização de negócios adicionar valor do imposto
-    BigDecimal valorImpostoRenda();
-
 }

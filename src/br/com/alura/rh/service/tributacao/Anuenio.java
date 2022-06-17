@@ -21,12 +21,4 @@ public class Anuenio implements Reajuste {
     public LocalDate data() {
         return data;
     }
-
-    @Override
-    public BigDecimal valorImpostoRenda() {
-        // 10% de reajuste
-        return valor.multiply(new BigDecimal("0.1"));
-    }
-
-
 }
