@@ -8,7 +8,7 @@ import java.math.RoundingMode;
 import java.time.LocalDate;
 import java.time.temporal.ChronoUnit;
 
-public class ValidacaoPeriodicidadeReajuste {
+public class ValidacaoPeriodicidadeReajuste implements ValidacaoReajuste {
 
     public void validar(Funcionario fun, BigDecimal aumento){
         LocalDate dataUltimoReajuste = fun.getDataUltimoReajuste();
