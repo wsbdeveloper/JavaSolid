@@ -11,14 +11,11 @@ import java.util.List;
 
 public class ReajusteService {
     private List<ValidacaoReajuste> validacoes;
-
-    // Recebendo a lista de validações e validando dentro da interface.
     public ReajusteService(List<ValidacaoReajuste> validacoes){
         this.validacoes = validacoes;
     }
 
     public void reajustarSalarioFuncionario(Funcionario fun, BigDecimal aumento){
-        // chamando todas validações
         this.validacoes.forEach(v -> v.validar(fun, aumento));
 
         BigDecimal salarioReajustado = fun.getSalario().add(aumento);
